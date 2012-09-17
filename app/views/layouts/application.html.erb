@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio Wahrnehmungstest | <%= yield(:title) %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <style type="text/css">                                          
+      body {                                                         
+        background-color: #124191;                                   
+      	border:0.2em solid #FFFFFF;                                  
+        -webkit-border-radius : 20px;                                
+        -moz-border-radius : 20px;                                   
+        border-radius : 20px;                                        
+      	margin:3em 5em;                                              
+      }                                 
+   </style>
+</head>
+<body>
+<div>
+<%= yield %>
+
+</div>
+
+<div>
+
+</div>
+
+<%= render "footer"%>
+
+</body>
+</html>

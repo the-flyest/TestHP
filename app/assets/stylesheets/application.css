@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+		.over {
+        background-color: #124191;     
+      	border:0.2em solid #FFFFFF;
+        -webkit-border-radius : 20px;
+        -moz-border-radius : 20px;
+        border-radius : 20px;
+      	margin:3em 3em;
+      	}
+      	.header {
+        font-family:"nokia-pure-text",Gadget,sans-serif;
+      	font-size:1.8em;
+      	text-align:left;
+      	color:#FFFFFF;
+        text-shadow : 2px 2px 2px rgb(0, 0, 0); 
+      	background-color:#124191;
+        margin:2em 2em;
+        border:0.2em solid #FFFFFF;
+        -webkit-border-radius : 20px;
+        -moz-border-radius : 20px;
+        border-radius : 20px;        
+		}
+      	.footer {
+        font-family:"nokia-pure-text",Gadget,sans-serif;
+      	font-size:12px;
+        line-height:120%;
+      	text-align:right;
+      	color:#FFFFFF;
+        margin:3em 3em;
+        padding:0.5em 0.5em;
+        border:0.2em solid #FFFFFF;
+        -webkit-border-radius : 20px;
+        -moz-border-radius : 20px;
+        border-radius : 20px;
+        /*position:absolute;*/ 
+        bottom:0px;
+        right:0px;
+      	}
+      	.content {
+        font-family:"nokia-pure-text",Gadget,sans-serif;
+      	font-size:1.5em;
+        line-height:120%;
+      	text-align:left;
+      	color:#FFFFFF;
+        margin:2em 2em;  
+      	}
+      	.list {
+        list-style-type:circle;
+        margin:0.5em 1em;
+      	}
+      	a:link {color:#FFFFFF;}      /* unvisited link */
+      	a:visited {color:#A4A4A4;}  /* visited link */
+      	a:hover {color:#FFFFFF;}  /* mouse over link */
+      	a:active {color:#0000FF;}  /* selected link */
+     	div.footer
+     	{
+     	clear:both;
+     	align:right;	
+     	}

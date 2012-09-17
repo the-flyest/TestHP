@@ -1,0 +1,56 @@
+<% provide(:title, "Kommando #{session[:cmd_nr]}") %>
+
+	<div class="header">
+      <h1>
+        Kommando <%= session[:cmd_nr].to_s%>/6
+      </h1>  
+    </div>
+
+    <div class="content">
+    	<%i = 0%>
+    	<%@cmds[session[:cmd_nr]].each do |value|%>
+    		<%= @ind_titel[i]%>     	    	    	    	
+    	    <%@assign[@ind_titel[i]] = value%>
+    	    	<br />    	    	
+    	    	<audio id="audio_<%=i%>" controls="controls" height="100" width="200" title="Variante <%= @ind_titel[i]%>">   
+    	          <source src='/audio/mp3/<%=value%>.mp3' type="audio/mp3" />                             
+    	          <source src='/audio/ogg/<%=value%>.ogg' type="audio/ogg" />                       
+    	        <embed height="100" width="100" src='/audio/mp3/<%=value%>.mp3' />
+    	        </audio>
+    	    <%i+=1%>
+    	    <br />
+    	<%end%> 
+	    	                                                                                                            
+    <br />
+    <!-- <%=session[:cmd_order]%> -->
+  	<br />
+    <p1> Welche Variante empfanden Sie am natürlichsten? </p1>
+    <br />
+
+    <%= form_for(@participant) do |f| %>
+    	<%first = true%>
+	    <% @assign.each do |key,value| %>
+			<%= radio_button "participant", "sres#{session[:cmd_nr]}", value%>
+			<%if first == true%>
+				<%first = false%>
+			<%end%>
+			<%=key%>
+	    <% end %>
+    	<br />
+    	<%= submit_tag "Bestätigen", :confirm => "Sind Sie sicher?", :onclick => "return hasEnded()"%>
+    	
+    <% end %>
+    
+			<script>
+			function hasEnded()
+			  {
+			  	var result = $("[id^=audio_]");
+			  	var egal = result[0].ended;
+			  	var x = true;
+			  	for (var n = 0; n<result.length; n++) { x = x && result[n].ended; }
+			  	if (x == false)		  	
+			  		alert("Hören Sie sich bitte alle Varianten an!");
+			  	return x
+			  	
+			  }
+			</script>                             

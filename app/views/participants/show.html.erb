@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @participant.date %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @participant.time %>
+</p>
+
+<p>
+  <b>Res1:</b>
+  <%= @participant.sres1 %>
+</p>
+
+<p>
+  <b>Res2:</b>
+  <%= @participant.sres2 %>
+</p>
+
+<p>
+  <b>Res3:</b>
+  <%= @participant.sres3 %>
+</p>
+
+<p>
+  <b>Res4:</b>
+  <%= @participant.sres4 %>
+</p>
+
+<p>
+  <b>Res5:</b>
+  <%= @participant.sres5 %>
+</p>
+
+<p>
+  <b>Res final:</b>
+  <%= @participant.sres_final %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @participant.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_participant_path(@participant) %> |
+<%= link_to 'Back', participants_path %>

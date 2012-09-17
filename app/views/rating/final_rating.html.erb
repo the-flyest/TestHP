@@ -1,0 +1,24 @@
+<% provide(:title, "Fazit") %>                     
+                                                                                                                                                                                                                                                                                                                        
+    <div class="header">
+      <h1>
+        Fazit
+      </h1>
+    </div>
+    <div class="content">
+  		<p1> Wie würden Sie die Qualität der Kommandos allgemein Beurteilen?</p1>
+		<br />
+	    <%= form_for(@participant) do |f| %>
+			<% @noten.each do |note| %>
+	  			<%=radio_button "participant", "sres_final", note%>
+	  			<%= note%>
+	  			<br />
+			<% end %>
+	 		<br />
+	 		<p2>Kommentar:</p2>
+	 		<br />
+	 		<%= text_area("participant", "comment", :rows => 8, :cols => 50)%>
+	    	<br />
+			<%= submit_tag "Bestätigen", :confirm => "Sind Sie sicher?" %>
+		<% end %>
+	</div>                                                                                                

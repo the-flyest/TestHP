@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 1
+  time: 1
+  res1: 1
+  res2: 1
+  res3: 1
+  res4: 1
+  res5: 1
+  res_final: 1
+  comment: MyText
+
+two:
+  date: 1
+  time: 1
+  res1: 1
+  res2: 1
+  res3: 1
+  res4: 1
+  res5: 1
+  res_final: 1
+  comment: MyText

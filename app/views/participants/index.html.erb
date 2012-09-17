@@ -1,0 +1,40 @@
+<h1>Listing participants</h1>
+
+<div class="content">
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Res1</th>
+    <th>Res2</th>
+    <th>Res3</th>
+    <th>Res4</th>
+    <th>Res5</th>
+    <th>Res final</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @participants.each do |participant| %>
+  <tr>
+    <td><%= participant.date %></td>
+    <td><%= participant.time %></td>
+    <td><%= participant.sres1 %></td>
+    <td><%= participant.sres2 %></td>
+    <td><%= participant.sres3 %></td>
+    <td><%= participant.sres4 %></td>
+    <td><%= participant.sres5 %></td>
+    <td><%= participant.sres_final %></td>
+    <td><%= participant.comment %></td>
+    <td><%= link_to 'Show', participant %></td>
+    <td><%= link_to 'Edit', edit_participant_path(participant) %></td>
+    <td><%= link_to 'Destroy', participant, method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+
+
