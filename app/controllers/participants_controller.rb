@@ -1,7 +1,7 @@
 class ParticipantsController < ApplicationController
   # GET /participants
   # GET /participants.json
-  http_basic_authenticate_with :name => "bheinric", :password => "123456" , :except => [:new, :create, :update]
+  http_basic_authenticate_with :name => "bheinric", :password => "warumrappstdu" , :except => [:new, :create, :update]
   
   def index
     @participants = Participant.all
