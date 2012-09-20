@@ -3,4 +3,7 @@
 # Add new mime types for use in respond_to blocks:
 # Mime::Type.register "text/richtext", :rtf
 # Mime::Type.register_alias "text/html", :iphone
-Rack::Mime::MIME_TYPES.merge!({".ogg" => "application/ogg"})
+Rack::Mime::MIME_TYPES.merge!({
+  ".ogg"  => "application/ogg",
+  ".oga"  => "audio/ogg",
+  })
