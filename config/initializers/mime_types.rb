@@ -6,6 +6,6 @@
 Rack::Mime::MIME_TYPES.merge!({
   ".ogg"  => "application/ogg",
   ".oga"  => "audio/ogg",
-  ".ogx"  => "application/ogg"
+  ".ogx"  => "application/ogg",
   ".wav"  => "audio/wav"
   })
