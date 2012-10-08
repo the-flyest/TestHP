@@ -90,8 +90,8 @@ production:
   adapter:   postgresql
   database:  'testhp'
   username:  'deploy'
-  password:  'T04P2hb5Ua'
-  host:      'ec2-54-243-201-146.compute-1.amazonaws.com'
+  password:  'nF0yDGBCv1'
+  host:      'ec2-54-243-252-233.compute-1.amazonaws.com'
   reconnect: true
   # adapter: mysql2
   # encoding: utf8
